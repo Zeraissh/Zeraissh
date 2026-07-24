@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-label="ZERAISSH tagline terminal">
+  <defs>
+    <pattern id="tlScan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.2" fill="#000000"/>
+    </pattern>
+    <clipPath id="tl1"><rect x="0" y="40" height="34" width="0">
+      <animate attributeName="width" values="0;560;560;0" keyTimes="0;0.12;0.96;1" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="tl2"><rect x="0" y="70" height="34" width="0">
+      <animate attributeName="width" values="0;0;480;480;0" keyTimes="0;0.18;0.30;0.96;1" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="tl3"><rect x="0" y="100" height="34" width="0">
+      <animate attributeName="width" values="0;0;420;420;0" keyTimes="0;0.36;0.48;0.96;1" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="tl4"><rect x="0" y="130" height="34" width="0">
+      <animate attributeName="width" values="0;0;440;440;0" keyTimes="0;0.54;0.66;0.96;1" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="tl5"><rect x="0" y="160" height="34" width="0">
+      <animate attributeName="width" values="0;0;60;60;0" keyTimes="0;0.72;0.78;0.96;1" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+
+  <!-- 终端窗口 -->
+  <rect width="1200" height="210" rx="14" fill="#0B0B10"/>
+  <rect x="7" y="7" width="1186" height="196" rx="10" fill="none" stroke="#8B30FF" stroke-width="2" opacity="0.7"/>
+  <line x1="0" y1="36" x2="1200" y2="36" stroke="#8B30FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="30" cy="18" r="7" fill="#FF2E88"/>
+  <circle cx="52" cy="18" r="7" fill="#FFD400"/>
+  <circle cx="74" cy="18" r="7" fill="#00E676"/>
+  <text x="600" y="23" font-family="Consolas,'Courier New',monospace" font-size="14" text-anchor="middle" fill="#8B949E">zeraissh@ninja: ~/profile</text>
+
+  <!-- 打字机行 -->
+  <g font-family="Consolas,'Courier New',monospace" font-size="20" fill="#00E676">
+    <text x="40" y="66" clip-path="url(#tl1)"><tspan fill="#FF2E88">&gt; </tspan>Yo！这里是 Zeraissh，嵌入式忍者参上！</text>
+    <text x="40" y="96" clip-path="url(#tl2)"><tspan fill="#FF2E88">&gt; </tspan>上位机 × 下位机，一套连招全搞定！</text>
+    <text x="40" y="126" clip-path="url(#tl3)"><tspan fill="#FF2E88">&gt; </tspan>代码即忍法，调试即修行——</text>
+    <text x="40" y="156" clip-path="url(#tl4)"><tspan fill="#FF2E88">&gt; </tspan>串口一开，Bug 退散！轰！</text>
+    <text x="40" y="186" clip-path="url(#tl5)"><tspan fill="#FF2E88">&gt; </tspan></text>
+  </g>
+  <rect x="66" y="172" width="11" height="20" fill="#00E676">
+    <animate attributeName="opacity" values="1;0" calcMode="discrete" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- 扫描线 -->
+  <rect width="1200" height="210" rx="14" fill="url(#tlScan)" opacity="0.08"/>
+</svg>

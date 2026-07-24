@@ -3,8 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=2800&pause=700&color=FF2E88&center=true&vCenter=true&width=860&lines=Yo！这里是+Zeraissh，嵌入式忍者参上！;上位机+×+下位机，一套连招全搞定！;代码即忍法，调试即修行——;串口一开，Bug+退散！轰！"
-       alt="typing intro"/>
+  <img src="assets/tagline.svg" alt="tagline terminal" width="100%"/>
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
@@ -31,11 +30,16 @@
 
 <div align="center">
   <a href="https://github.com/Zeraissh/stm32-gdb-mcp">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zeraissh&repo=stm32-gdb-mcp&bg_color=0B0B10&title_color=FF2E88&text_color=E6E6E6&icon_color=FFD400&border_color=8B30FF" alt="stm32-gdb-mcp"/>
+    <img src="assets/card-stm32-gdb-mcp.svg" alt="stm32-gdb-mcp" width="48%"/>
   </a>
   <a href="https://github.com/Zeraissh/Coding_WorkFlow">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zeraissh&repo=Coding_WorkFlow&bg_color=0B0B10&title_color=FF2E88&text_color=E6E6E6&icon_color=FFD400&border_color=8B30FF" alt="Coding_WorkFlow"/>
+    <img src="assets/card-coding-workflow.svg" alt="Coding_WorkFlow" width="48%"/>
   </a>
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/github/stars/Zeraissh/stm32-gdb-mcp?style=for-the-badge&color=FF2E88&labelColor=0B0B10" alt="stm32-gdb-mcp stars"/>
+  <img src="https://img.shields.io/github/stars/Zeraissh/Coding_WorkFlow?style=for-the-badge&color=8B30FF&labelColor=0B0B10" alt="Coding_WorkFlow stars"/>
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
