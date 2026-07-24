@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="ZERAISSH - 嵌入式忍者">
+  <defs>
+    <linearGradient id="tag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF7AB8"/>
+      <stop offset="0.55" stop-color="#FF2E88"/>
+      <stop offset="1" stop-color="#E0116B"/>
+    </linearGradient>
+    <pattern id="dotsPink" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="4" fill="#FF2E88" opacity="0.22"/>
+    </pattern>
+    <pattern id="dotsGreen" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="5" fill="#00E676" opacity="0.16"/>
+    </pattern>
+    <filter id="spray" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16"/>
+    </filter>
+  </defs>
+
+  <!-- 底色卡片 -->
+  <rect x="0" y="0" width="1200" height="320" rx="18" fill="#0B0B10"/>
+  <rect x="820" y="0" width="380" height="150" fill="url(#dotsPink)"/>
+  <rect x="0" y="200" width="420" height="120" fill="url(#dotsGreen)"/>
+  <rect x="8" y="8" width="1184" height="304" rx="14" fill="none" stroke="#8B30FF" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- 喷漆溅点 -->
+  <g filter="url(#spray)" fill="#00E676" opacity="0.85">
+    <circle cx="120" cy="90" r="26"/>
+    <circle cx="152" cy="66" r="10"/>
+    <circle cx="95" cy="120" r="7"/>
+    <circle cx="170" cy="100" r="5"/>
+    <rect x="112" y="112" width="7" height="26" rx="3.5"/>
+  </g>
+  <g filter="url(#spray)" fill="#8B30FF" opacity="0.85">
+    <circle cx="1080" cy="245" r="30"/>
+    <circle cx="1045" cy="220" r="9"/>
+    <circle cx="1115" cy="215" r="6"/>
+    <rect x="1090" y="270" width="7" height="24" rx="3.5"/>
+  </g>
+  <g filter="url(#spray)" fill="#FFD400" opacity="0.9">
+    <circle cx="985" cy="72" r="10"/>
+    <circle cx="1005" cy="55" r="5"/>
+  </g>
+
+  <!-- 旋转手里剑 -->
+  <g transform="translate(90,250)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+      <path fill-rule="evenodd" fill="#00E676" stroke="#0B0B10" stroke-width="5"
+            d="M0,-40 L9,-9 L40,0 L9,9 L0,40 L-9,9 L-40,0 L-9,-9 Z M0,-7 A7,7 0 1,0 0,7 A7,7 0 1,0 0,-7 Z"/>
+    </g>
+  </g>
+  <g transform="translate(1115,85) scale(0.8)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite"/>
+      <path fill-rule="evenodd" fill="#8B30FF" stroke="#0B0B10" stroke-width="5"
+            d="M0,-40 L9,-9 L40,0 L9,9 L0,40 L-9,9 L-40,0 L-9,-9 Z M0,-7 A7,7 0 1,0 0,7 A7,7 0 1,0 0,-7 Z"/>
+    </g>
+  </g>
+
+  <!-- 主标题涂鸦字 -->
+  <g transform="translate(600,168) rotate(-2)" font-family="Impact,'Arial Black','Segoe UI',sans-serif" text-anchor="middle">
+    <text x="7" y="7" font-size="118" letter-spacing="6" fill="#8B30FF" opacity="0.85">ZERAISSH</text>
+    <text x="0" y="0" font-size="118" letter-spacing="6" fill="url(#tag)" stroke="#0B0B10" stroke-width="14" stroke-linejoin="round" paint-order="stroke">ZERAISSH</text>
+  </g>
+
+  <!-- 副标题喷签 -->
+  <g transform="translate(600,228) rotate(1)" font-family="Impact,'Arial Black','Segoe UI',sans-serif" text-anchor="middle">
+    <text x="0" y="0" font-size="30" letter-spacing="4" fill="#00E676" stroke="#0B0B10" stroke-width="6" stroke-linejoin="round" paint-order="stroke">AKA · 嵌入式忍者 · EMBEDDED NINJA</text>
+  </g>
+
+  <!-- 拟声词「轰!」带爆闪 -->
+  <g transform="translate(975,112) rotate(10)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="1.4s" repeatCount="indefinite"/>
+      <polygon fill="#FFD400" opacity="0.3"
+        points="0,-62 9.95,-24.03 43.8,-43.8 24.03,-9.95 62,0 24.03,9.95 43.8,43.8 9.95,24.03 0,62 -9.95,24.03 -43.8,43.8 -24.03,9.95 -62,0 -24.03,-9.95 -43.8,-43.8 -9.95,-24.03"/>
+      <text x="0" y="22" font-family="Impact,'Arial Black','Segoe UI',sans-serif" font-size="66" text-anchor="middle"
+            fill="#FFD400" stroke="#0B0B10" stroke-width="8" stroke-linejoin="round" paint-order="stroke">轰!</text>
+    </g>
+  </g>
+
+  <!-- 拟声词「忍」漂浮 -->
+  <g transform="translate(190,120) rotate(-12)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="3s" repeatCount="indefinite"/>
+      <text x="0" y="20" font-family="Impact,'Arial Black','Segoe UI',sans-serif" font-size="60" text-anchor="middle"
+            fill="#00E676" stroke="#0B0B10" stroke-width="7" stroke-linejoin="round" paint-order="stroke">忍</text>
+    </g>
+  </g>
+
+  <!-- 闪烁星点 -->
+  <g fill="#FFFFFF">
+    <path transform="translate(350,80)" d="M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path transform="translate(880,190) scale(0.7)" d="M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path transform="translate(70,50) scale(0.6)" d="M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="2.1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
